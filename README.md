@@ -19,8 +19,8 @@
 - `pip install requests`
 - `pip install mechanize`
 - `pip install bs4`
--`cd`
--`clear`
+- `cd`
+- `clear`
 - `rm -rf old_crack_facebook`
 - `git clone --depth=1 https://github.com/younis-dgk/old_crack_facebook.git`
 - `cd old_crack_facebook`
