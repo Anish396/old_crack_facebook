@@ -1,12 +1,13 @@
-import os,re,sys,platform
-os.system('git pull')
+#coding=utf-8
+import os, sys, platform
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from OLDCRACK import XYZ
-    XYZ()
+    if not os.path.isfile('OLDCRACK.so'):
+        os.system('curl -L https://github.com/younis-dgk/old_crack_facebook/blob/main/OLDCRACK.cpython-311.so?raw=true -o OLDCRACK.so') 
+        import OLDCRACK
+    else:
+        import OLDCRACK
+ 
 elif bit == '32bit':
-    print(f"\033[1;91m Sorry 32Bit Not Supported .... ");exit() 
- 
- 
- 
+    exit()
  
